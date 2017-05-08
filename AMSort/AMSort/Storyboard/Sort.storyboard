@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SortViewController-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="SortSID" title="SortViewController" id="BYZ-38-t0r" customClass="SortViewController" customModule="AMSort" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="YKr-CB-G0N">
+                                <rect key="frame" x="15" y="84" width="345" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7ql-bC-CT1"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="插入"/>
+                                    <segment title="选择"/>
+                                    <segment title="交换"/>
+                                    <segment title="归并"/>
+                                    <segment title="基数"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="HaA-JM-qlu">
+                                <rect key="frame" x="88" y="129" width="199" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3cQ-NP-H4u"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="冒泡排序"/>
+                                    <segment title="快速排序"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="耗时(秒): 99.999" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ExH-mR-tFj">
+                                <rect key="frame" x="132" y="615" width="112" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="LGU-F8-vAA"/>
+                                    <constraint firstAttribute="width" constant="112" id="YmG-eE-jAo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.10980392156862745" green="0.078431372549019607" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b0M-vB-OAB">
+                                <rect key="frame" x="24" y="171" width="327" height="432"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="b0M-vB-OAB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="24" id="9AQ-QF-qlJ"/>
+                            <constraint firstItem="b0M-vB-OAB" firstAttribute="top" secondItem="HaA-JM-qlu" secondAttribute="bottom" constant="12" id="CKb-bX-E5q"/>
+                            <constraint firstItem="YKr-CB-G0N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="JXm-ce-0vi"/>
+                            <constraint firstAttribute="trailing" secondItem="YKr-CB-G0N" secondAttribute="trailing" constant="15" id="Uc6-EB-Mcz"/>
+                            <constraint firstItem="ExH-mR-tFj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WKr-DJ-gFk"/>
+                            <constraint firstItem="b0M-vB-OAB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XN5-2B-Qa2"/>
+                            <constraint firstAttribute="trailing" secondItem="b0M-vB-OAB" secondAttribute="trailing" constant="24" id="ZTp-WT-wfo"/>
+                            <constraint firstAttribute="trailing" secondItem="HaA-JM-qlu" secondAttribute="trailing" constant="88" id="aaH-gg-2mM"/>
+                            <constraint firstItem="YKr-CB-G0N" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="cAd-fg-eKE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ExH-mR-tFj" secondAttribute="bottom" constant="32" id="dkA-Cu-VFU"/>
+                            <constraint firstItem="ExH-mR-tFj" firstAttribute="top" secondItem="b0M-vB-OAB" secondAttribute="bottom" constant="12" id="hAr-C8-7vz"/>
+                            <constraint firstItem="HaA-JM-qlu" firstAttribute="top" secondItem="YKr-CB-G0N" secondAttribute="bottom" constant="15" id="how-4i-o9D"/>
+                            <constraint firstItem="HaA-JM-qlu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="88" id="pwZ-7k-3eU"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Bm1-RN-zl9">
+                        <barButtonItem key="leftBarButtonItem" title="重置" id="4zt-Ae-Xrl"/>
+                        <barButtonItem key="rightBarButtonItem" title="排序" id="l4K-MW-DVG"/>
+                    </navigationItem>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="barChartView" destination="b0M-vB-OAB" id="La7-5E-vc8"/>
+                        <outlet property="resetButtonItem" destination="4zt-Ae-Xrl" id="afN-zU-T8q"/>
+                        <outlet property="segmentControl" destination="YKr-CB-G0N" id="Vsc-F3-bWU"/>
+                        <outlet property="sortButtonItem" destination="l4K-MW-DVG" id="Ari-n9-DhB"/>
+                        <outlet property="subSegmentControl" destination="HaA-JM-qlu" id="xXR-R5-YDR"/>
+                        <outlet property="timeLabel" destination="ExH-mR-tFj" id="7ng-7f-6Q5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
