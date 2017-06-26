@@ -9,19 +9,16 @@
 import UIKit
 import RxSwift
 
-class SortViewModel: AMViewModel
-{
+class SortViewModel: AMViewModel {
 	var model: SortModel?
 	
 	
 	// MARK: -
-	// MARK: Orrvide Methods
+	// MARK: Orrvide
 	
-	override func initViewModel()
-	{
+	override func initViewModel() {
 		model = SortModel.init()
 	}
-	
 	
 	let resetSubject = PublishSubject<Void>()
 	let invalidSubject = PublishSubject<Void>()

@@ -10,8 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class SortViewController: AMViewController
-{
+class SortViewController: AMViewController {
 	@IBOutlet var resetButtonItem: UIBarButtonItem!
 	@IBOutlet var sortButtonItem: UIBarButtonItem!
 	@IBOutlet var segmentControl: UISegmentedControl!
@@ -19,19 +18,13 @@ class SortViewController: AMViewController
 	@IBOutlet var timeLabel: UILabel!
 	@IBOutlet var barChartView: UIView!
 	
-    override func viewDidLoad()
-    {
+    override func viewDidLoad() {
         super.viewDidLoad()
-    }
-	
-    override func didReceiveMemoryWarning()
-    {
-        super.didReceiveMemoryWarning()
     }
 	
 	
 	// MARK: -
-	// MARK: Lazy Methods
+	// MARK: Lazy
 	
 	lazy var viewModel: SortViewModel = {
 		var viewModel = SortViewModel.init()
@@ -40,10 +33,9 @@ class SortViewController: AMViewController
 	
 	
 	// MARK: -
-	// MARK: Orrvide Methods
+	// MARK: Orrvide
 	
-	override func initView()
-	{
+	override func initView() {
 		if (viewModel.model?.barViews == nil) {
 			viewModel.model?.barViews = NSMutableArray.init(capacity: BarCount)
 			for _ in 0 ..< BarCount {
@@ -55,8 +47,7 @@ class SortViewController: AMViewController
 		}
 	}
 	
-	override func bindViewModel()
-	{
+	override func bindViewModel() {
 		segmentControl.rx.value
 			.subscribe(onNext: { _ in
 				let mode: SortMode = SortMode(rawValue: self.segmentControl.selectedSegmentIndex)!
@@ -250,22 +241,19 @@ class SortViewController: AMViewController
 			.addDisposableTo(disposeBag)
 	}
 	
-	override func initData()
-	{
+	override func initData() {
 		viewModel.resetSubject.onNext()
 	}
 	
-	override func refreshView()
-	{
+	override func refreshView() {
 	}
 	
-	override func refreshData()
-	{
+	override func refreshData() {
 	}
 	
 	
 	// MARK: -
-	// MARK: Required Methods
+	// MARK: Required
 	
 }
 

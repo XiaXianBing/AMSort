@@ -8,10 +8,8 @@
 
 import UIKit
 
-class AMViewModel: NSObject
-{
-	override init()
-	{
+class AMViewModel: NSObject {
+	override init() {
 		super.init()
 		
 		self.initViewModel()
@@ -19,9 +17,8 @@ class AMViewModel: NSObject
 	
 	
 	// MARK: -
-	// MARK: Orrvide Methods
+	// MARK: Orrvide
 	
-	func initViewModel()
-	{
+	func initViewModel() {
 	}
 }

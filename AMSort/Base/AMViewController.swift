@@ -9,12 +9,10 @@
 import UIKit
 import RxSwift
 
-class AMViewController: UIViewController
-{
+class AMViewController: UIViewController {
 	var disposeBag = DisposeBag()
 	
-	override func viewDidLoad()
-	{
+	override func viewDidLoad() {
 		super.viewDidLoad()
 		
 		initView()
@@ -22,44 +20,37 @@ class AMViewController: UIViewController
 		initData()
 	}
 	
-	override func viewWillAppear(_ animated: Bool)
-	{
+	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
 		
 		refreshView()
 		refreshData()
 	}
 	
-	override func didReceiveMemoryWarning()
-	{
+	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 	}
 	
 	
 	// MARK: -
-	// MARK: Orrvide Methods
+	// MARK: Orrvide
 	
-	func initView()
-	{
+	func initView() {
 	}
 	
-	func bindViewModel()
-	{
+	func bindViewModel() {
 	}
 	
-	func initData()
-	{
+	func initData() {
 	}
 	
-	func refreshView()
-	{
+	func refreshView() {
 	}
 	
-	func refreshData()
-	{
+	func refreshData() {
 	}
 	
 	
 	// MARK: -
-	// MARK: Required Methods
+	// MARK: Required
 }

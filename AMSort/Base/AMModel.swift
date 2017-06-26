@@ -8,10 +8,8 @@
 
 import UIKit
 
-class AMModel: NSObject
-{
-	override init()
-	{
+class AMModel: NSObject {
+	override init() {
 		super.init()
 		
 		self.initModel()
@@ -19,9 +17,8 @@ class AMModel: NSObject
 	
 	
 	// MARK: -
-	// MARK: Orrvide Methods
+	// MARK: Orrvide
 	
-	func initModel()
-	{
+	func initModel() {
 	}
 }

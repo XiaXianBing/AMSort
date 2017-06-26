@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8450208F107434946F013F44 /* Pods_AMSort.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6602BDD089A4A9DCF8D3A1 /* Pods_AMSort.framework */; };
+		E71B7EB81F00D4B900116B81 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E71B7EB71F00D4B900116B81 /* Info.plist */; };
+		E71B7EBA1F00D4D300116B81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E71B7EB91F00D4D300116B81 /* Assets.xcassets */; };
 		E7E122171EC0594000BD017A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E122161EC0594000BD017A /* AppDelegate.swift */; };
-		E7E1221E1EC0594000BD017A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7E1221D1EC0594000BD017A /* Assets.xcassets */; };
 		E7E122311EC05A3900BD017A /* AMModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E122291EC05A3900BD017A /* AMModel.swift */; };
 		E7E122321EC05A3900BD017A /* AMSortAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E1222A1EC05A3900BD017A /* AMSortAlgorithm.swift */; };
 		E7E122331EC05A3900BD017A /* AMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E1222B1EC05A3900BD017A /* AMViewController.swift */; };
@@ -26,10 +27,10 @@
 		1C6602BDD089A4A9DCF8D3A1 /* Pods_AMSort.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMSort.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C067F7FD2C31DE4E53AD448 /* Pods-AMSort.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMSort.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-AMSort/Pods-AMSort.debug.xcconfig"; sourceTree = "<group>"; };
 		A98618E2D3E39092BEA4A044 /* Pods-AMSort.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMSort.release.xcconfig"; path = "../Pods/Target Support Files/Pods-AMSort/Pods-AMSort.release.xcconfig"; sourceTree = "<group>"; };
+		E71B7EB71F00D4B900116B81 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = AMSort/Info.plist; sourceTree = SOURCE_ROOT; };
+		E71B7EB91F00D4D300116B81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7E122131EC0594000BD017A /* AMSort.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMSort.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7E122161EC0594000BD017A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E7E1221D1EC0594000BD017A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
-		E7E122221EC0594000BD017A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		E7E122291EC05A3900BD017A /* AMModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMModel.swift; sourceTree = "<group>"; };
 		E7E1222A1EC05A3900BD017A /* AMSortAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMSortAlgorithm.swift; sourceTree = "<group>"; };
 		E7E1222B1EC05A3900BD017A /* AMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +117,7 @@
 		E7E1222D1EC05A3900BD017A /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				E71B7EB91F00D4D300116B81 /* Assets.xcassets */,
 				E7E1222E1EC05A3900BD017A /* Guide */,
 				E7E1222F1EC05A3900BD017A /* Launch */,
 			);
@@ -149,8 +151,7 @@
 		E7E122371EC05AC700BD017A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E7E122221EC0594000BD017A /* Info.plist */,
-				E7E1221D1EC0594000BD017A /* Assets.xcassets */,
+				E71B7EB71F00D4B900116B81 /* Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -252,10 +253,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E71B7EB81F00D4B900116B81 /* Info.plist in Resources */,
 				E7E122441EC05B4500BD017A /* LaunchScreen.storyboard in Resources */,
-				E7E1221E1EC0594000BD017A /* Assets.xcassets in Resources */,
 				E7E122451EC05B4500BD017A /* Sort.storyboard in Resources */,
 				E7E122351EC05A3900BD017A /* launch_background@2x.png in Resources */,
+				E71B7EBA1F00D4D300116B81 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,7 +427,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4C067F7FD2C31DE4E53AD448 /* Pods-AMSort.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 266QTD8W5Y;
 				INFOPLIST_FILE = AMSort/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -439,7 +440,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A98618E2D3E39092BEA4A044 /* Pods-AMSort.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 266QTD8W5Y;
 				INFOPLIST_FILE = AMSort/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
