@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8450208F107434946F013F44 /* Pods_AMSort.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6602BDD089A4A9DCF8D3A1 /* Pods_AMSort.framework */; };
-		E71B7EB81F00D4B900116B81 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E71B7EB71F00D4B900116B81 /* Info.plist */; };
 		E71B7EBA1F00D4D300116B81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E71B7EB91F00D4D300116B81 /* Assets.xcassets */; };
 		E7E122171EC0594000BD017A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E122161EC0594000BD017A /* AppDelegate.swift */; };
 		E7E122311EC05A3900BD017A /* AMModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E122291EC05A3900BD017A /* AMModel.swift */; };
@@ -253,7 +252,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E71B7EB81F00D4B900116B81 /* Info.plist in Resources */,
 				E7E122441EC05B4500BD017A /* LaunchScreen.storyboard in Resources */,
 				E7E122451EC05B4500BD017A /* Sort.storyboard in Resources */,
 				E7E122351EC05A3900BD017A /* launch_background@2x.png in Resources */,
@@ -427,6 +425,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4C067F7FD2C31DE4E53AD448 /* Pods-AMSort.debug.xcconfig */;
 			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 266QTD8W5Y;
 				INFOPLIST_FILE = AMSort/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
